@@ -27,7 +27,7 @@
             <th>Warehouse</th>
             <th>Location</th>
             <th>Quantity</th>
-            <th colspan="3">Actions</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -37,8 +37,6 @@
               <td><%= inventory.warehouse.location%></td>
               <td><%= inventory.quantity %></td>
               <td><%= link_to "Show", inventory %></td>
-              <td><%= link_to "Edit", edit_inventory_path(inventory) %></td>
-              <td><%= link_to "Destroy", inventory, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></td>
             </tr>
           <% end %>
         </tbody>

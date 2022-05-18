@@ -21,7 +21,9 @@ Reference: [Challenge Instructions](https://docs.google.com/document/d/1PoxpoaJy
 
 ## Run Application
 
-...
+Follow the link below to access the Repl. Press Play. :)
+
+[Link to Repl](https://replit.com/@bmcfads/shopify-challenge-inventory-repl?v=1)
 
 ---
 
@@ -57,24 +59,21 @@ If an inventory record already exists for a warehouse/item combination, it can b
 - Navigate to the Inventory page (/inventories)
 - Click the "New inventory" link
 - Enter information
-- Click "Create inventory"
+- Click "Create Inventory"
 
 ### Edit Existing Inventory
 
 - Navigate to the Inventory page (/inventories)
-- Click "Edit" under the actions column for the desired item
+- Click "Show" under the actions column for the desired inventory
+- Click "Edit this inventory"
 - Enter updated information
-- Click "Update item"
+- Click "Update Inventory"
 
 ### Delete Existing Inventory
 
 - Navigate to the Inventory page (/inventories)
-- Click "Destroy" under the actions column for the desired item
-- Click OK in popup to confirm
-
-### Additional Ways To Show / Edit / Delete
-
-The show, edit, and destroy actions for inventory records can also be accessed through the inventory listings on the warehouse and item detail views. See below for instructions on how to access these views.
+- Click "Show" under the actions column for the desired inventory
+- Click "Destroy this inventory"
 
 ---
 
@@ -96,20 +95,21 @@ This view includes an inventory list for the items, showing quantities at wareho
 - Navigate to the Items page (/items)
 - Click the "New item" link
 - Enter information
-- Click "Create item"
+- Click "Create Item"
 
 ### Edit Existing Item
 
 - Navigate to the Items page (/items)
-- Click "Edit" under the actions column for the desired item
+- Click "Show" under the actions column for the desired item
+- Click "Edit this item"
 - Enter updated information
-- Click "Update item"
+- Click "Update Item"
 
 ### Delete Existing Item
 
 - Navigate to the Items page (/items)
-- Click "Destroy" under the actions column for the desired item
-- Click OK in popup to confirm
+- Click "Show" under the actions column for the desired item
+- Click "Destroy this item"
 
 ---
 
@@ -131,17 +131,18 @@ This view includes an inventory list for the warehouse, showing quantities of it
 - Navigate to the Warehouses page (/warehouses)
 - Click the "New warehouse" link
 - Enter information
-- Click "Create warehouse"
+- Click "Create Warehouse"
 
 ### Edit Existing Warehouse
 
 - Navigate to the Warehouses page (/warehouses)
-- Click "Edit" under the actions column for the desired warehouse
+- Click "Show" under the actions column for the desired warehouse
+- Click "Edit this warehouse"
 - Enter updated information
-- Click "Update warehouse"
+- Click "Update Warehouse"
 
 ### Delete Existing Warehouse
 
 - Navigate to the Warehouses page (/warehouses)
-- Click "Destroy" under the actions column for the desired warehouse
-- Click OK in popup to confirm
+- - Click "Show" under the actions column for the desired warehouse
+- Click "Destroy this warehouse"
