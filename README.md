@@ -1,25 +1,147 @@
-# Rails on Replit
+# README
 
-This is a template to get you started with Rails on Replit. It's ready to go so you can just hit run and start coding!
+# Shopify Backend Developer Intern Challenge - Fall 2022
 
-This template was generated using `rails new` (after you install the `rails` gem from the packager sidebar) so you can always do that if you prefer to set it up from scratch. The only had two make config changes we had to make to run it on Replit:
+**Task:** Build an inventory tracking web application for a logistics company.
 
-- bind the app on `0.0.0.0` instead of `localhost` (see `.replit`)
-- allow `*.repl.co` hosts (see `config/environments/development.rb`)
-- allow the app to be iframed on `replit.com` (see `config/application.rb`)
+**Requirements:**
 
-## Running the app
+1. Basic CRUD functionality for inventory items
+2. One of the following additional features:
 
-Simple hit run! You can edit the run command from the `.replit` file.
+- When deleting, allow deletion comments and undeletion
+- **Ability to create warehouses/locations and assign inventory to specific locations**
+- Ability to create “shipments” and assign inventory to the shipment, and adjust inventory appropriately
 
-## Running commands
+Additional feature selected: warehouses
 
-Start every command with `bundle exec` so that it runs in the context of the installed gems environment. The console pane will give you output from the server but you can run arbitrary command from the shell without stopping the server.
+Reference: [Challenge Instructions](https://docs.google.com/document/d/1PoxpoaJymXmFB3iCMhGL6js-ibht7GO_DkCF2elCySU/edit)
 
-## Database
+---
 
-SQLite would work in development but we don't recommend running it in production. Instead look into using the built-in [Replit database](http://docs.replit.com/misc/database). Otherwise you are welcome to connect databases from your favorite provider. 
+## Run Application
 
-## Help
+...
 
-If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Feel free to report bugs and give us feedback [here](https://replit.com/support).
+---
+
+## Initial Configuration
+
+The database is initially seeded with 4 warehouses, 8 items, and 0 inventories.
+
+---
+
+## Inventory
+
+### Assign Inventory To Warehouse
+
+Items can be assigned to warehouses through iventories. Create a new inventory record to complete the assignment or edit an exiting record to move items between warehouses. See below for instructions on how to create/edit inventory records.
+
+Only one inventory record for each warehouse/item combination can exist.
+
+### Adjust Existing Inventory
+
+If an inventory record already exists for a warehouse/item combination, it can be edited to adjust the quantity. The inventory record can also be assigned to a different warehouse or item provided that combination does not already have an associated inventory record.
+
+### View All Inventory
+
+- Navigate to the Inventory page (/inventories)
+
+### Show Inventory Details
+
+- Navigate to the Inventory page (/inventories)
+- Click "Show" under the actions column for the desired inventory
+
+### Create New Inventory
+
+- Navigate to the Inventory page (/inventories)
+- Click the "New inventory" link
+- Enter information
+- Click "Create inventory"
+
+### Edit Existing Inventory
+
+- Navigate to the Inventory page (/inventories)
+- Click "Edit" under the actions column for the desired item
+- Enter updated information
+- Click "Update item"
+
+### Delete Existing Inventory
+
+- Navigate to the Inventory page (/inventories)
+- Click "Destroy" under the actions column for the desired item
+- Click OK in popup to confirm
+
+### Additional Ways To Show / Edit / Delete
+
+The show, edit, and destroy actions for inventory records can also be accessed through the inventory listings on the warehouse and item detail views. See below for instructions on how to access these views.
+
+---
+
+## Items
+
+### View All Items
+
+- Navigate to the Items page (/items)
+
+### Show Item Details
+
+This view includes an inventory list for the items, showing quantities at warehouses.
+
+- Navigate to the Items page (/items)
+- Click "Show" under the actions column for the desired item
+
+### Create New Item
+
+- Navigate to the Items page (/items)
+- Click the "New item" link
+- Enter information
+- Click "Create item"
+
+### Edit Existing Item
+
+- Navigate to the Items page (/items)
+- Click "Edit" under the actions column for the desired item
+- Enter updated information
+- Click "Update item"
+
+### Delete Existing Item
+
+- Navigate to the Items page (/items)
+- Click "Destroy" under the actions column for the desired item
+- Click OK in popup to confirm
+
+---
+
+## Warehouses
+
+### View All Warehouses
+
+- Navigate to the Warehouses page (/warehouses)
+
+### Show Warehouse Details
+
+This view includes an inventory list for the warehouse, showing quantities of items at the warehouse.
+
+- Navigate to the Warehouses page (/warehouses)
+- Click "Show" under the actions column for the desired warehouse
+
+### Create New Warehouse
+
+- Navigate to the Warehouses page (/warehouses)
+- Click the "New warehouse" link
+- Enter information
+- Click "Create warehouse"
+
+### Edit Existing Warehouse
+
+- Navigate to the Warehouses page (/warehouses)
+- Click "Edit" under the actions column for the desired warehouse
+- Enter updated information
+- Click "Update warehouse"
+
+### Delete Existing Warehouse
+
+- Navigate to the Warehouses page (/warehouses)
+- Click "Destroy" under the actions column for the desired warehouse
+- Click OK in popup to confirm
