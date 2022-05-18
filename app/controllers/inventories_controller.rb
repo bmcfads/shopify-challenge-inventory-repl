@@ -3,7 +3,7 @@ class InventoriesController < ApplicationController
 
   # GET /inventories or /inventories.json
   def index
-    @inventories = Inventory.all
+    @inventories = Inventory.includes(:warehouse, :item).order('warehouses.name', 'items.name')
   end
 
   # GET /inventories/1 or /inventories/1.json
