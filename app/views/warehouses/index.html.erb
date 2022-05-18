@@ -1,14 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Warehouses</h1>
-
-<div id="warehouses">
-  <% @warehouses.each do |warehouse| %>
-    <%= render warehouse %>
-    <p>
-      <%= link_to "Show this warehouse", warehouse %>
-    </p>
-  <% end %>
-</div>
+<h2>Warehouses</h2>
 
 <%= link_to "New warehouse", new_warehouse_path %>
+
+<hr>
+
+<%= render "table", warehouses: @warehouses %>
